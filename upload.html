@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upload Paper</title>
+</head>
+<body>
+
+  <h2>Upload Research Paper</h2>
+
+  <form action="/upload" method="POST" enctype="multipart/form-data">
+    <input type="text" name="title" placeholder="Title" required><br><br>
+    <input type="text" name="author" placeholder="Author" required><br><br>
+    <input type="number" name="year" placeholder="Year" required><br><br>
+    <input type="file" name="paper" required><br><br>
+    <button type="submit">Upload</button>
+  </form>
+
+  <br>
+  <a href="/papers">View Papers</a>
+
+</body>
+</html>
